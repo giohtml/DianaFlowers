@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -983,6 +984,52 @@ body {
 }
 .not-loaded * {
   animation-play-state: paused !important;
+}
+
+/* Make sure the scene can stack layers */
+body {
+  position: relative; /* add this */
+}
+
+/* Put flowers behind the overlay */
+.flowers {
+  position: relative;
+  z-index: 1; /* add this */
+}
+
+/* Centered text+gif overlay */
+.overlay {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* above flowers */
+  width: min(90vw, 700px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  pointer-events: none; /* doesn’t block the animation */
+  padding: 16px 18px;
+}
+
+/* Text styling */
+.overlay__title {
+  font-size: clamp(24px, 4vw, 56px);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 18px rgba(255, 0, 200, 0.35);
+}
+
+/* GIF sizing */
+.overlay__gif {
+  width: min(70vw, 320px);
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  pointer-events: auto; /* optional: lets you drag/save it */
 }
 
 /*# sourceMappingURL=styles.css.map */
