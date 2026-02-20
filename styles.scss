@@ -7,7 +7,7 @@
 }
 
 :root {
-  --dark-color: #000;
+  --dark-color: #000000;
 }
 
 body {
@@ -36,11 +36,10 @@ body {
     radial-gradient(
       ellipse at bottom,
       var(--dark-color),
-      rgba(145, 233, 255, 0.2)
+      rgba(0, 0, 0, 0.2)
     ),
     repeating-linear-gradient(
       220deg,
-      rgb(0, 0, 0) 0px,
       rgb(0, 0, 0) 19px,
       transparent 19px,
       transparent 22px
@@ -59,7 +58,7 @@ body {
       transparent 19px,
       transparent 22px
     ),
-    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+    linear-gradient(90deg, rgb(255, 0, 191), rgb(255, 0, 170));
 }
 
 .flowers {
@@ -187,7 +186,7 @@ body {
       transform: translate(-50%, -100%);
       width: 8vmin;
       height: 8vmin;
-      background-color: #6bf0ff;
+      background-color: #f700ff;
       filter: blur(10vmin);
     }
   }
@@ -199,11 +198,11 @@ body {
     width: 8vmin;
     height: 11vmin;
     border-radius: 51% 49% 47% 53% / 44% 45% 55% 69%;
-    background-color: #a7ffee;
-    background-image: linear-gradient(to top, #54b8aa, #a7ffee);
+    background-color: #d6ffa7;
+    background-image: linear-gradient(to top, #ff18c5, #ff7df4);
     transform-origin: bottom center;
     opacity: 0.9;
-    box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 2vmin rgb(255, 255, 255);
 
     &--1 {
       transform: translate(-10%, 1%) rotateY(40deg) rotateX(-50deg);
@@ -223,7 +222,7 @@ body {
       transform-origin: bottom left;
       border-radius: 4vmin 10vmin 4vmin 4vmin;
       transform: translate(-0%, 18%) rotateX(70deg) rotate(-43deg);
-      background-image: linear-gradient(to top, #39c6d6, #a7ffee);
+      background-image: linear-gradient(to top, #d54bff, #f39cff);
       z-index: 1;
       opacity: 0.8;
     }
@@ -236,7 +235,7 @@ body {
     width: 9vmin;
     height: 4vmin;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
 
     &::after {
       content: "";
@@ -361,11 +360,11 @@ body {
     width: 1.5vmin;
     background-image: linear-gradient(
         to left,
-        rgb(0, 0, 0, 0.2),
+        #004b10,
         transparent,
-        rgba(255, 255, 255, 0.2)
+        rgba(0, 80, 24, 0.2)
       ),
-      linear-gradient(to top, transparent 10%, #14757a, #39c6d6);
+      linear-gradient(to top, transparent 10%, #006622, #008533);
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
     animation: grow-flower-tree 4s backwards;
 
@@ -382,7 +381,7 @@ body {
       background-image: linear-gradient(
         to top,
         rgba(20, 117, 122, 0.4),
-        #39c6d6
+        #006e2a
       );
 
       &--1 {
@@ -430,13 +429,13 @@ body {
     bottom: 0vmin;
     width: 1vmin;
     height: 1vmin;
-    background-color: rgb(255, 251, 0);
+    background-color: rgb(255, 0, 0);
     border-radius: 50%;
     filter: blur(0.2vmin);
     animation: light-ans 4s linear infinite backwards;
 
     &:nth-child(odd) {
-      background-color: #23f0ff;
+      background-color: #fbff00;
     }
 
     &--1 {
@@ -481,7 +480,7 @@ body {
   }
 
   &__grass {
-    --c: #159faa;
+    --c: #00750698;
     --line-w: 1.5vmin;
 
     position: absolute;
@@ -668,7 +667,7 @@ body {
   &__g-long {
     --w: 2vmin;
     --h: 6vmin;
-    --c: #159faa;
+    --c: #39b400b9;
     position: absolute;
     bottom: 10vmin;
     left: -3vmin;
@@ -704,7 +703,7 @@ body {
       height: 50vmin;
       transform-origin: bottom center;
       background-image: linear-gradient(to top, transparent 30%, var(--c));
-      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5);
       clip-path: polygon(35% 0, 65% 1%, 100% 100%, 0% 100%);
     }
   }
@@ -720,13 +719,13 @@ body {
       width: 30vmin;
       height: 50vmin;
       border-top-left-radius: 100%;
-      border-left: 2vmin solid #ff0040;
+      border-left: 2vmin solid #009e15bb;
       background-image: linear-gradient(
         to bottom,
         transparent,
         var(--dark-color) 60%
       );
-      -webkit-mask-image: linear-gradient(to top, transparent 30%, #079097 60%);
+      -webkit-mask-image: linear-gradient(to top, transparent 30%, #007910 60%);
     }
 
     &--1 {
@@ -896,7 +895,7 @@ body {
       width: 10vmin;
       height: 10vmin;
       border-radius: 100% 0% 0% 100% / 100% 100% 0% 0%;
-      box-shadow: inset 0 2px 1vmin hsla(184, 97%, 58%, 0.2);
+      box-shadow: inset 0 2px 1vmin hsla(133, 97%, 58%, 0.24);
       background-image: linear-gradient(
           to bottom left,
           transparent,
@@ -904,20 +903,20 @@ body {
         ),
         linear-gradient(
           to bottom right,
-          #159faa 50%,
+          #006909 50%,
           transparent 50%,
           transparent
         );
 
       -webkit-mask-image: linear-gradient(
         to bottom right,
-        #159faa 50%,
+        #008829 50%,
         transparent 50%,
         transparent
       );
       mask-image: linear-gradient(
         to bottom right,
-        #159faa 50%,
+        #058a00 50%,
         transparent 50%,
         transparent
       );
@@ -947,8 +946,8 @@ body {
       width: 30vmin;
       height: 50vmin;
       border-top-left-radius: 100%;
-      border-left: 2vmin solid #079097;
-      -webkit-mask-image: linear-gradient(to top, transparent 25%, #079097 50%);
+      border-left: 2vmin solid #00580f;
+      -webkit-mask-image: linear-gradient(to top, transparent 25%, #007724 50%);
       position: relative;
       z-index: 1;
     }
@@ -960,7 +959,7 @@ body {
       width: 10vmin;
       height: 10vmin;
       border-radius: 100% 0% 0% 100% / 100% 100% 0% 0%;
-      box-shadow: inset 0 2px 1vmin hsla(184, 97%, 58%, 0.2);
+      box-shadow: inset 0 2px 1vmin hsla(135, 100%, 24%, 0.541);
       background-image: linear-gradient(
           to bottom left,
           transparent,
@@ -968,14 +967,14 @@ body {
         ),
         linear-gradient(
           to bottom right,
-          #23f0ff 45%,
+          #07c90096 45%,
           transparent 50%,
           transparent
         );
 
       -webkit-mask-image: linear-gradient(
         135deg,
-        #159faa 40%,
+        #005c1c 40%,
         transparent 50%,
         transparent
       );
