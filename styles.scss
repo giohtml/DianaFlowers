@@ -198,8 +198,8 @@ body {
     width: 8vmin;
     height: 11vmin;
     border-radius: 51% 49% 47% 53% / 44% 45% 55% 69%;
-    background-color: #d6ffa7;
-    background-image: linear-gradient(to top, #ff1bc6, #ff95f6);
+    background-color: #006315;
+    background-image: linear-gradient(to top, #ff1bc6, #ff9595);
     transform-origin: bottom center;
     opacity: 0.9;
     box-shadow: inset 0 0 2vmin rgb(255, 255, 255);
@@ -703,7 +703,7 @@ body {
       height: 50vmin;
       transform-origin: bottom center;
       background-image: linear-gradient(to top, transparent 30%, var(--c));
-      box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0 0 2px rgb(255, 255, 255);
       clip-path: polygon(35% 0, 65% 1%, 100% 100%, 0% 100%);
     }
   }
@@ -1087,7 +1087,7 @@ body {
       -webkit-mask-image: linear-gradient(
         to top,
         transparent 40%,
-        #079097 80%
+        #004e1e 80%
       ) !important;
 
       &--1 {
@@ -1110,7 +1110,7 @@ body {
       -webkit-mask-image: linear-gradient(
         to top,
         transparent 50%,
-        #079097 80%
+        #007430 80%
       ) !important;
 
       &--1 {
@@ -1127,7 +1127,7 @@ body {
       -webkit-mask-image: linear-gradient(
         to top,
         transparent 40%,
-        #079097 80%
+        #036100 80%
       ) !important;
     }
   }
@@ -1142,7 +1142,7 @@ body {
       -webkit-mask-image: linear-gradient(
         to top,
         transparent 50%,
-        #079097 80%
+        #007700 80%
       ) !important;
     }
   }
